@@ -16,4 +16,4 @@ class UserPin(models.Model):
     pin = models.SmallIntegerField()
 
     def __str__(self):
-        return str(self.user.user_id)
+        return str(self.user_id)
