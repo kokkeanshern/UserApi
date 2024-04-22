@@ -5,6 +5,10 @@ from django.shortcuts import get_object_or_404
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Welcome to the home page!")
  
 @api_view(['GET','POST'])
 def user(request, user_id=None):

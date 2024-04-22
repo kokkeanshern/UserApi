@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/<int:user_id>', views.user, name='user_detail'),
     path('user', views.user, name='create_user'),
-    path('userpin', views.userpin, name='create_pin')
+    path('userpin', views.userpin, name='create_pin'),
+    path('', views.home, name='home')
 ]
